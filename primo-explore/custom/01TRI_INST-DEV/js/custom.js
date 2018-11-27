@@ -54,14 +54,28 @@ var work = function(ip){
 };
 
 
-var baz;
+//var baz;
 var work2 = function(ip){
-    baz = ip;
+//    baz = ip;
     if(
         ip.match(/^130\.58\./)
      && location.href.split("/").pop().match("vid=01TRI_INST:DEV")
     ) {
         document.location.replace(location.href.replace(/vid=01TRI_INST:DEV/,"vid=01TRI_INST:SC"));
+    };
+
+    if(
+        ip.match(/^165\.82\./)
+     && location.href.split("/").pop().match("vid=01TRI_INST:DEV")
+    ) {
+        document.location.replace(location.href.replace(/vid=01TRI_INST:DEV/,"vid=01TRI_INST:HC"));
+    };
+
+    if(
+        ip.match(/^165\.106\./)
+     && location.href.split("/").pop().match("vid=01TRI_INST:DEV")
+    ) {
+        document.location.replace(location.href.replace(/vid=01TRI_INST:DEV/,"vid=01TRI_INST:BMC"));
     };
 };
 //165.106 bmc
@@ -75,5 +89,5 @@ var work2 = function(ip){
     }
 };
 */
-//getUserIP(work2);
+getUserIP(work2);
 
