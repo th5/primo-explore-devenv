@@ -89,5 +89,6 @@ var work2 = function(ip){
     }
 };
 */
-getUserIP(work2);
+//getUserIP(work2);
+
 
