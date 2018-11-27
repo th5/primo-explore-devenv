@@ -5,6 +5,13 @@ rgb(237, 232, 215)
 
 #E9E9E9
 rgb(233, 233, 233)
+*/
+
+prm-search-bar .search-element-inner {
+  border-radius: 0px;
+}
+
+
 
 
 /* primary color hook */
