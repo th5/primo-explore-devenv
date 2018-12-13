@@ -1,0 +1,71 @@
+    /* TOP NAVIGATION BAR */
+    prm-topbar:not(.transparent-top-bar) .top-nav-bar {
+    background-color: #FFFFFF;
+    color: #4C4C4C;
+    }
+
+    prm-topbar:not(.transparent-top-bar) .md-button {
+    background-color: #FCFCFC;
+    color: #4C4C4C !important;
+    }
+
+    prm-topbar:not(.transparent-top-bar) md-fab-toolbar md-toolbar {
+    background-color: #FFFFFF !important;
+    color: #4C4C4C;
+    }
+
+    prm-topbar:not(.transparent-top-bar) .buttons-group .md-button {
+    box-shadow: none;
+    }
+
+    .prm-secondary-color, prm-search-bookmark-filter .md-button, prm-topbar:not(.transparent-top-bar) .top-nav-bar {
+    color: #4C4C4C;
+    }
+
+
+    prm-topbar:not(.transparent-top-bar) prm-main-menu[menu-type=menu] {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;    
+    }
+
+    prm-topbar:not(.transparent-top-bar) prm-main-menu[menu-type=menu] div.layout-full-height {
+    height: 86%;
+    min-height: 86%;
+    }
+
+    prm-topbar:not(.transparent-top-bar) prm-main-menu[menu-type=menu] .md-button {
+    font-size:13px;
+    text-transform:none;
+    }
+
+    prm-topbar:not(.transparent-top-bar) prm-main-menu[menu-type=menu] .md-button:hover {
+    background-color: #DBDCDD;
+    }
+
+    prm-topbar:not(.transparent-top-bar) prm-main-menu[menu-type=menu] div[ng-repeat="urlConfig in $ctrl.viewUrlsList |limitTo:$ctrl.showCount()"] {
+    border-top: solid 1px #DBDCDD;
+    border-right: solid 1px #DBDCDD;
+    }    
+    
+    prm-topbar:not(.transparent-top-bar) prm-main-menu[menu-type=menu] div[ng-repeat="urlConfig in $ctrl.viewUrlsList |limitTo:$ctrl.showCount()"]:first-child {
+    border-left: solid 1px #DBDCDD;
+    }
+
+    prm-topbar:not(.transparent-top-bar) prm-main-menu[menu-type=menu] button[ng-if="$ctrl.showMoreOptionsButton()"] {
+    border-top: solid 1px #DBDCDD;
+    border-right: solid 1px #DBDCDD;
+    }    
+
+    /* PIN AND SEARCH HISTORY BUTTONS IN TOP BAR */
+    prm-topbar:not(.transparent-top-bar) prm-search-bookmark-filter .md-button {
+    background-color: #FFFFFF;
+    }
+
+    prm-topbar:not(.transparent-top-bar) prm-search-bookmark-filter .md-button:hover {
+    background-color: #DBDCDD;
+    color: #4C4C4C;
+    box-shadow: none;
+    }
+
+    /* END TOP BAR */
