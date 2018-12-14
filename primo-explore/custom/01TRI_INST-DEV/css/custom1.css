@@ -720,11 +720,17 @@ button.button-with-menu-arrow {
   color: #4C4C4C !important;
 }
 
+prm-topbar .sign-in-btn-ctm:hover,
+button.button-with-menu-arrow:hover {
+  background-color: #808080 !important;
+  color: #FCFCFC  !important;
+}
+
 
 prm-topbar:not(.transparent-top-bar) .md-button {
 
     background-color: #FCFCFC;
-    color: #4C4C4C !important;
+    /*color: #4C4C4C !important;*/
 
 }
 
