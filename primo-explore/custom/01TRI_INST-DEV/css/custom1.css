@@ -39,7 +39,9 @@ prm-search-bar .search-element-inner {
       color: #0d214e;
       background-color: rgba(41, 76, 152, 0.1); }
   .md-button.button-confirm, .service-form-static-panel button.button-confirm prm-icon + span, .service-form-static-panel button.button-confirm prm-icon svg path {
-    color: #0f7d00; }
+    /*color: #0f7d00; */
+    color: #294C98;
+  }
     .md-button.button-confirm:hover:not([disabled]), .service-form-static-panel button.button-confirm prm-icon + span:hover:not([disabled]), .service-form-static-panel button.button-confirm prm-icon svg path:hover:not([disabled]), .md-button.button-confirm:focus:not([disabled]), .service-form-static-panel button.button-confirm prm-icon + span:focus:not([disabled]), .service-form-static-panel button.button-confirm prm-icon svg path:focus:not([disabled]), .md-button.button-confirm.hovered:not([disabled]), .service-form-static-panel button.button-confirm prm-icon + span.hovered:not([disabled]), .service-form-static-panel button.button-confirm prm-icon svg path.hovered:not([disabled]), .md-button.button-confirm.md-focused:not([disabled]), .service-form-static-panel button.button-confirm prm-icon + span.md-focused:not([disabled]), .service-form-static-panel button.button-confirm prm-icon svg path.md-focused:not([disabled]), .md-button.button-confirm._md-focused:not([disabled]), .service-form-static-panel button.button-confirm prm-icon + span._md-focused:not([disabled]), .service-form-static-panel button.button-confirm prm-icon svg path._md-focused:not([disabled]) {
       color: #031700;
       background-color: rgba(15, 125, 0, 0.1); }
@@ -707,6 +709,34 @@ prm-search-bar {background-color:#294C98; }
 
 /* END Ex Libris Provided CSS */
 
+.main-menu {
+  /*background-color: green;*/
+  background-color: #808080;
+}
+
+prm-topbar .sign-in-btn-ctm,
+button.button-with-menu-arrow {
+  background-color: #FCFCFC !important;
+  color: #4C4C4C !important;
+}
+
+
+prm-topbar:not(.transparent-top-bar) .md-button {
+
+    background-color: #FCFCFC;
+    color: #4C4C4C !important;
+
+}
+
+
+    prm-topbar:not(.transparent-top-bar) .md-button {
+    /*background-color: #FCFCFC;*/
+    /*color: #4C4C4C !important;*/
+
+    /*background-color: #4C4C4C;*/
+    background-color: #808080;
+    color: #FCFCFC /*!important*/;    
+    }
 
 
     /* TOP NAVIGATION BAR */
@@ -717,8 +747,12 @@ prm-search-bar {background-color:#294C98; }
     }
 
     prm-topbar:not(.transparent-top-bar) .md-button {
-    background-color: #FCFCFC;
-    color: #4C4C4C !important;
+    /*background-color: #FCFCFC;*/
+    /*color: #4C4C4C !important;*/
+
+    /*background-color: #4C4C4C;*/
+    background-color: #808080;
+    color: #FCFCFC /*!important*/;    
     }
 
     prm-topbar:not(.transparent-top-bar) md-fab-toolbar md-toolbar {
@@ -771,8 +805,8 @@ prm-search-bar {background-color:#294C98; }
 
 
     prm-topbar:not(.transparent-top-bar) prm-search-bookmark-filter .md-button:hover {
-    background-color: #DBDCDD;
-    color: #4C4C4C;
+    background-color: #4C4C4C;
+    color: #DBDCDD;
     box-shadow: none;
     }
 
