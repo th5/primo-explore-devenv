@@ -817,3 +817,18 @@ prm-topbar:not(.transparent-top-bar) .md-button {
     }
 
     /* END TOP BAR */
+
+    prm-login {
+      background-color: yellow;
+    }
+
+    prm-logo .product-logo {
+      padding-top: 5px;
+      padding-left: 5px;
+      padding-right: 5px;
+      padding-bottom: 0px;
+}
+
+    prm-logo img {
+      height: 100%;
+    }
