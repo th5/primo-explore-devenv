@@ -1,4 +1,4 @@
-/* BEGIN ExLibris Provided CSS */
+ BEGIN ExLibris Provided CSS */
 
 /*
 colors
@@ -24,10 +24,15 @@ prm-search-bar .search-element-inner {
     background-color: rgba(58, 58, 58, 0.1); 
   }
   .light-on-dark-dialog .md-button {
-    color: white; }
+    /*color: #FFFFFF; */
+    /*background-color: #808080;*/
+  }
     .light-on-dark-dialog .md-button:hover:not([disabled]), .light-on-dark-dialog .md-button:focus:not([disabled]), .light-on-dark-dialog .md-button.hovered:not([disabled]), .light-on-dark-dialog .md-button.md-focused:not([disabled]), .light-on-dark-dialog .md-button._md-focused:not([disabled]) {
-      color: white;
-      background-color: rgba(255, 255, 255, 0.08); }
+      /*color: white;*/
+      /*background-color: rgba(255, 255, 255, 0.08);*/
+      color: #808080;
+      /*background-color: #505050;      */
+       }
   .md-button.md-primary {
     color: #294C98; }
     .md-button.md-primary:hover:not([disabled]), .md-button.md-primary:focus:not([disabled]), .md-button.md-primary.hovered:not([disabled]), .md-button.md-primary.md-focused:not([disabled]), .md-button.md-primary._md-focused:not([disabled]) {
@@ -709,6 +714,80 @@ prm-search-bar {background-color:#294C98; }
 
 /* END Ex Libris Provided CSS */
 
+/* TOP NAVIGATION BAR */
+prm-topbar:not(.transparent-top-bar) .top-nav-bar {
+background-color: #FFFFFF;
+/*background-color: #E9E9E9;*/
+color: #4C4C4C;
+}
+
+prm-topbar:not(.transparent-top-bar) .md-button {
+/*background-color: #FCFCFC;*/
+/*color: #4C4C4C !important;*/
+
+/*background-color: #4C4C4C;*/
+background-color: #808080;
+color: #FCFCFC /*!important*/;    
+}
+
+prm-topbar:not(.transparent-top-bar) md-fab-toolbar md-toolbar {
+background-color: #FFFFFF !important;
+color: #4C4C4C;
+}
+
+prm-topbar:not(.transparent-top-bar) .buttons-group .md-button {
+box-shadow: none;
+}
+
+.prm-secondary-color, prm-search-bookmark-filter .md-button, prm-topbar:not(.transparent-top-bar) .top-nav-bar {
+color: #4C4C4C;
+}
+
+
+prm-topbar:not(.transparent-top-bar) prm-main-menu[menu-type=menu] {
+display: flex;
+justify-content: flex-end;
+flex-direction: column;    
+}
+
+prm-topbar:not(.transparent-top-bar) prm-main-menu[menu-type=menu] div.layout-full-height {
+height: 86%;
+min-height: 86%;
+}
+
+prm-topbar:not(.transparent-top-bar) prm-main-menu[menu-type=menu] .md-button {
+font-size:13px;
+text-transform:none;
+}
+
+prm-topbar:not(.transparent-top-bar) prm-main-menu[menu-type=menu] .md-button:hover {
+background-color: #DBDCDD;
+}
+
+prm-topbar:not(.transparent-top-bar) prm-main-menu[menu-type=menu] div[ng-repeat="urlConfig in $ctrl.viewUrlsList |limitTo:$ctrl.showCount()"] {
+border-top: solid 1px #DBDCDD;
+border-right: solid 1px #DBDCDD;
+}    
+
+prm-topbar:not(.transparent-top-bar) prm-main-menu[menu-type=menu] div[ng-repeat="urlConfig in $ctrl.viewUrlsList |limitTo:$ctrl.showCount()"]:first-child {
+border-left: solid 1px #DBDCDD;
+}
+
+prm-topbar:not(.transparent-top-bar) prm-main-menu[menu-type=menu] button[ng-if="$ctrl.showMoreOptionsButton()"] {
+border-top: solid 1px #DBDCDD;
+border-right: solid 1px #DBDCDD;
+}    
+
+
+prm-topbar:not(.transparent-top-bar) prm-search-bookmark-filter .md-button:hover {
+background-color: #4C4C4C;
+color: #DBDCDD;
+box-shadow: none;
+}
+
+/* END TOP BAR */
+
+
 .main-menu {
   /*background-color: green;*/
   background-color: #808080;
@@ -735,100 +814,99 @@ prm-topbar:not(.transparent-top-bar) .md-button {
 }
 
 
-    prm-topbar:not(.transparent-top-bar) .md-button {
-    /*background-color: #FCFCFC;*/
-    /*color: #4C4C4C !important;*/
+prm-topbar:not(.transparent-top-bar) .md-button {
+/*background-color: #FCFCFC;*/
+/*color: #4C4C4C !important;*/
 
-    /*background-color: #4C4C4C;*/
-    background-color: #808080;
-    color: #FCFCFC /*!important*/;    
-    }
-
-
-    /* TOP NAVIGATION BAR */
-    prm-topbar:not(.transparent-top-bar) .top-nav-bar {
-    background-color: #FFFFFF;
-    /*background-color: #E9E9E9;*/
-    color: #4C4C4C;
-    }
-
-    prm-topbar:not(.transparent-top-bar) .md-button {
-    /*background-color: #FCFCFC;*/
-    /*color: #4C4C4C !important;*/
-
-    /*background-color: #4C4C4C;*/
-    background-color: #808080;
-    color: #FCFCFC /*!important*/;    
-    }
-
-    prm-topbar:not(.transparent-top-bar) md-fab-toolbar md-toolbar {
-    background-color: #FFFFFF !important;
-    color: #4C4C4C;
-    }
-
-    prm-topbar:not(.transparent-top-bar) .buttons-group .md-button {
-    box-shadow: none;
-    }
-
-    .prm-secondary-color, prm-search-bookmark-filter .md-button, prm-topbar:not(.transparent-top-bar) .top-nav-bar {
-    color: #4C4C4C;
-    }
-
-
-    prm-topbar:not(.transparent-top-bar) prm-main-menu[menu-type=menu] {
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: column;    
-    }
-
-    prm-topbar:not(.transparent-top-bar) prm-main-menu[menu-type=menu] div.layout-full-height {
-    height: 86%;
-    min-height: 86%;
-    }
-
-    prm-topbar:not(.transparent-top-bar) prm-main-menu[menu-type=menu] .md-button {
-    font-size:13px;
-    text-transform:none;
-    }
-
-    prm-topbar:not(.transparent-top-bar) prm-main-menu[menu-type=menu] .md-button:hover {
-    background-color: #DBDCDD;
-    }
-
-    prm-topbar:not(.transparent-top-bar) prm-main-menu[menu-type=menu] div[ng-repeat="urlConfig in $ctrl.viewUrlsList |limitTo:$ctrl.showCount()"] {
-    border-top: solid 1px #DBDCDD;
-    border-right: solid 1px #DBDCDD;
-    }    
-    
-    prm-topbar:not(.transparent-top-bar) prm-main-menu[menu-type=menu] div[ng-repeat="urlConfig in $ctrl.viewUrlsList |limitTo:$ctrl.showCount()"]:first-child {
-    border-left: solid 1px #DBDCDD;
-    }
-
-    prm-topbar:not(.transparent-top-bar) prm-main-menu[menu-type=menu] button[ng-if="$ctrl.showMoreOptionsButton()"] {
-    border-top: solid 1px #DBDCDD;
-    border-right: solid 1px #DBDCDD;
-    }    
-
-
-    prm-topbar:not(.transparent-top-bar) prm-search-bookmark-filter .md-button:hover {
-    background-color: #4C4C4C;
-    color: #DBDCDD;
-    box-shadow: none;
-    }
-
-    /* END TOP BAR */
-
-    prm-login {
-      background-color: yellow;
-    }
-
-    prm-logo .product-logo {
-      padding-top: 5px;
-      padding-left: 5px;
-      padding-right: 5px;
-      padding-bottom: 0px;
+/*background-color: #4C4C4C;*/
+background-color: #808080;
+color: #FCFCFC /*!important*/;    
 }
 
-    prm-logo img {
-      height: 100%;
-    }
+
+
+
+prm-login {
+  background-color: #F0F0F0;
+}
+
+prm-login .md-button {
+  background-color: #FFFFFF;
+}
+/*prm-login .md-button:hover {
+  background-color: rgba(233,233,233,1.0);
+}*/
+
+prm-login-item {
+  z-index: 100;
+}
+
+prm-login-item button:hover {
+  background-color: pink;
+}
+
+
+prm-login .md-headline {
+  color: #000000;
+}
+
+prm-logo .product-logo {
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 0px;
+}
+
+prm-logo img {
+  height: 100%;
+}
+
+md-backdrop.md-opaque {
+  background-color: rgb(233, 233, 233);
+}
+
+prm-main-menu[menu-type="full"] .custom-links-container .main-menu-button .transparent-card {
+
+    /*background-color: red;*/
+
+}
+
+/* EXPANDED MENU */
+md-dialog.light-on-dark-dialog {
+    background-color: #666666;
+}
+
+md-dialog.light-on-dark-dialog prm-main-menu[menu-type="full"] md-content .md-headline {
+    background-color: #666666;  
+    color: #FCF5BB;
+}
+
+md-dialog.light-on-dark-dialog md-list md-list-item .md-list-item-text .list-item-title/*, 
+md-dialog.light-on-dark-dialog md-list md-list-item .md-list-item-text h3*/ {
+  color: #fff;
+}
+
+/*md-dialog.light-on-dark-dialog md-list md-list-item .md-list-item-text .list-item-title:hover {
+  color: #808080;
+}*/
+
+prm-login .md-button:hover {
+  background-color: yellow;
+}
+
+.light-on-dark-dialog .md-button:hover:not([disabled]) {
+    color: #808080;
+    background-color: #C0C0C0;
+}
+
+.light-on-dark-dialog .md-button:{
+    /*color: #808080;*/
+    background-color: green;
+}
+
+.light-on-dark-dialog .md-button:hover:not([disabled]) h3 {
+    color: #606060;
+}
+
+
+
