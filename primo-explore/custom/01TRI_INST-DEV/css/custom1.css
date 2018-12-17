@@ -933,4 +933,11 @@ prm-login .md-button:hover {
 }
 
 
+prm-logo a:hover, prm-logo a:focus {
+  background-color: unset !important; 
+}
 
+prm-logo:hover, prm-logo:focus-within
+{
+  background-color: rgba(41, 76, 152, 0.1);
+}
