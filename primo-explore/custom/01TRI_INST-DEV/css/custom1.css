@@ -24,8 +24,8 @@ prm-search-bar .search-element-inner {
     background-color: rgba(58, 58, 58, 0.1); 
   }
   .light-on-dark-dialog .md-button {
-    /*color: #FFFFFF; */
-    /*background-color: #808080;*/
+    color: #FFFFFF; 
+    background-color: #808080;
   }
     .light-on-dark-dialog .md-button:hover:not([disabled]), .light-on-dark-dialog .md-button:focus:not([disabled]), .light-on-dark-dialog .md-button.hovered:not([disabled]), .light-on-dark-dialog .md-button.md-focused:not([disabled]), .light-on-dark-dialog .md-button._md-focused:not([disabled]) {
       /*color: white;*/
@@ -865,19 +865,43 @@ md-backdrop.md-opaque {
   background-color: rgb(233, 233, 233);
 }
 
+/*prm-main-menu[menu-type="full"]:hover .custom-links-container .main-menu-button .transparent-card {
+    background-color: yellow;
+}*/
+
 prm-main-menu[menu-type="full"] .custom-links-container .main-menu-button .transparent-card {
-
-    /*background-color: red;*/
-
-}
-
-/* EXPANDED MENU */
-md-dialog.light-on-dark-dialog {
     background-color: #666666;
 }
 
+prm-main-menu[menu-type="full"] .md-button:hover:not([disabled]) {
+  background-color: #A0A0A0;
+}
+
+prm-main-menu[menu-type="full"] .md-button:focus:not([disabled]) {
+  background-color: #C0C0C0;
+}
+
+
+prm-change-lang {
+  color: #666666;
+}
+
+svg#earth {
+  color: #666666;
+}
+
+.light-on-dark-dialog .md-button:focus:not([disabled]) {
+    color: #808080;
+    background-color: #C0C0C0;
+}
+
+
+/* EXPANDED MENU */
+md-dialog.light-on-dark-dialog {
+    background-color: #E9E9E9;
+}
+
 md-dialog.light-on-dark-dialog prm-main-menu[menu-type="full"] md-content .md-headline {
-    background-color: #666666;  
     color: #FCF5BB;
 }
 
@@ -891,21 +915,21 @@ md-dialog.light-on-dark-dialog md-list md-list-item .md-list-item-text h3*/ {
 }*/
 
 prm-login .md-button:hover {
-  background-color: yellow;
+  /*background-color: yellow;*/
 }
 
 .light-on-dark-dialog .md-button:hover:not([disabled]) {
-    color: #808080;
-    background-color: #C0C0C0;
+/*    color: #808080;
+    background-color: #C0C0C0;*/
 }
 
 .light-on-dark-dialog .md-button:{
     /*color: #808080;*/
-    background-color: green;
+    /*background-color: green;*/
 }
 
 .light-on-dark-dialog .md-button:hover:not([disabled]) h3 {
-    color: #606060;
+    /*color: #606060;*/
 }
 
 
